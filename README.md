@@ -26,6 +26,9 @@ This project is welcome for any contributions to improve the application.
 ## Screenshots:
 * ![image](assets/screenshots/Sample_page.jpg)
 
+## Application's Architecture:
+* ![image](assets/screenshots/app_architectue.jpg)
+
 
 ## Deployed link
 * https://damiennsoh.github.io/Quiz-Application-BCA/
