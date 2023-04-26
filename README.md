@@ -17,7 +17,7 @@
   * HTML
   * CSS
   * JAVASCRIPT
-  * GITHUB PAGES
+  * GITHUB PAGES/Kaban
   * BOOTSTRAP
 
 ## Contributions:
