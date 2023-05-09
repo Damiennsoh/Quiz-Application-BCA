@@ -40,12 +40,13 @@ function startTimer(){
     timeRemaining --;
     timeRemainingSpan.textContent = timeRemaining;
 
-    if(timeRemaining <=0) {
+    if(timeRemaining <= 0) {
       clearInterval(timer);
-      timeRemainingSpan.textContent = "Quiz Over";
+      displayScore();
+      // timeRemainingSpan.textContent = "Quiz Over";
   
     }
-  }, 10000);
+  }, 1000);
   
 } 
 
@@ -117,6 +118,23 @@ function displayScore() {
   `;
 }
 
+// creating a function for the Download CV button so that when clicked, the file will actually download.
+function downloadResume() {
+  const url = "https://example.com/resume.pdf"; // replace with the URL of your resume file
+  const filename = "Damien.pdf"; // replace with the name you want to give to the downloaded file
+
+  fetch(url)
+    .then(response => response.blob())
+    .then(blob => {
+      const url = window.URL.createObjectURL(new Blob([blob]));
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", filename);
+      document.body.appendChild(link);
+      link.click();
+      link.parentNode.removeChild(link);
+    });
+}
 
 // Start the quiz
 displayQuestion();
