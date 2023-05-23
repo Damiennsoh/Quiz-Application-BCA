@@ -1,6 +1,16 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: blue;
+  /* background-color: blue; */
+}
+
+/* Styling the navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; 
+  
 }
 
 #quiz-container {
@@ -10,7 +20,7 @@ body {
   border: 2px solid #ccc;
   border-radius: 5px;
   border-color: blueviolet;
-  margin-top: 20px;
+  margin-top: 130px;
   background-color: burlywood;
   visibility: hidden;
 }
@@ -61,69 +71,6 @@ button {
   cursor: pointer;
   font-size: 16px;
 }
-/* 
-.navbar{
-  background-color: #008CBA;
-  display:flex;
-  justify-content: space-between;
-} */
-
-.navbar a:hover{
-  background-color: rgb(48, 130, 0);
-}
-
-/* .navbar{
-  background-color: coral;
-} */
-
-.bg-dark-1{
-  margin-top: 40px;
-  
-}
-
-footer{
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
-#footer{
-  margin-bottom: 10;
-  /* height: 10px; */
-}
-
-.linkedin{
-  background-color: gold;
-  
-}
-.facebook{
-  background-color: gold;
-}
-.skype{
-  background-color: gold;
-}
-.twitter{
-  background-color: gold;
-
-}
-.flickr{
-  background-color: gold;
-}
-
-.footer{
-  height: 20px;
-}
-
-div.container.text-center{
-  height: 20px;
-  
-}
-
-section#footer.py-5{
-height: 20;
-
-}
 
 /* Start quiz button */
 #start-quiz-button{
@@ -131,17 +78,35 @@ float: right;
 background-color: green;
 }
 
-#timer{
-  text-align: center;
-  margin-bottom: 15%;
-  font-size: larger;
-  color: blue;
+#timer {
+  position: fixed;
+  top: 120px;
+  right: 0;
+  padding: 10px;
+  background-color: #85bbf1;
+  color: rgb(68, 68, 68);
+  font-weight: bold;
 }
 
-#welcome-message{
+#time-remaining {
+  /* CSS styles here */
+  color:#fcfcfc
+  
+}
+
+#welcome-message {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: #333;
+}
+/* #welcome-message{
   text-align: center;
   color: blueviolet;
-}
+  margin-bottom: 40;
+} */
 
 h6.m-0.mt-4.text-center.text-white.text-capitalize{
   background-color: black;
@@ -151,4 +116,101 @@ h6.m-0.mt-4.text-center.text-white.text-capitalize{
 /* Adding media queries to make it mobile responsive */
 @media only screen and (max-width:93.75%) {
   /* CSS styles for small screens */
+}
+
+/* Styling for previousQuestion and NextQuestion buttons */
+#next-button {
+  float: right;
+  padding-left: 35px;
+background-color: rgb(97, 88, 180);
+}
+
+footer {
+  background-color: #1db925;
+  color: rgb(68, 68, 68);
+  padding: 30px 0;
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+}
+
+.container {
+  position: relative;
+}
+/* media queries to make it mobile responsive */
+@media (max-width: 767px) {
+  footer {
+    padding: 20px 0;
+  }
+}
+
+.footer h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Social media icon styles */
+.social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+/* Font Awesome icon styles */
+.fa {
+  display: inline-block;
+  font-size: inherit;
+  font-style: normal;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-github:before {
+  content: "\f09b";
+}
+
+.fa-linkedin:before {
+ 
+  content: "\f08c";
+}
+
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+.fa-twitter:before {
+  content: "\f099";
+}
+
+.fa-instagram:before {
+  content: "\f16d";
 }
