@@ -274,7 +274,7 @@ displayQuestion(questions[currentQuestion]);
 console.log(timer);
 const timeRemainingSpan = document.getElementById("time-remaining");
 const startQuizButton = document.getElementById("start-quiz-button");
-let timeRemaining = 600; // 10 minutes in seconds
+let timeRemaining = 300; // 5 minutes in seconds
 
 function startTimer() {
   const timer = setInterval(() => {

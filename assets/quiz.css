@@ -214,3 +214,31 @@ footer {
 .fa-instagram:before {
   content: "\f16d";
 }
+
+/* styling of the contact information */
+.contact-info a {
+  color: black;
+}
+
+.contact-info b {
+  font-weight: bold;
+}
+
+/* applying a hover background to the p elements of the contact info */
+.contact-info p:hover {
+  background-color: #f2f2f2;
+}
+
+.col-md-4 {
+  text-align: right;
+}
+
+.col-md-4 p {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+
+.navbar a:hover{
+  background-color: rgb(203, 186, 216);
+}
